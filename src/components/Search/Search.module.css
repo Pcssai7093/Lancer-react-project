@@ -1,19 +1,18 @@
 .searchBarDiv{
-    /* position: fixed; */
-    /* right:0; */
-    /* bottom: 0; */
     text-align: center;
     margin: 20px 0px;
 }
 #searchBar{
-    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
     border-radius: 5px;
     width:200px;
     height:25px;
     font-size: larger;
-    /* border: none; */
     border: 1px solid;
+    color: white;
+    font-weight: 600;
+    background-color: #52db95;
 }
+
 .filter{
     border: 1px solid;
     border-radius: 5px;
@@ -21,6 +20,9 @@
     width:200px;
     height: 30px;
     font-size: larger;
+    color: white;
+    font-weight: 600;
+    background-color: #52db95;
 } 
 .clear{
     border: 1px solid;
@@ -30,8 +32,15 @@
     /* border-color: white; */
     height: 30px;
     font-size: larger;
-    color: black;
-    background-color: white;
+    color: white;
+    font-weight: 600;
+    background-color: #52db95;
     /* border: n; */
     cursor: pointer;
 }
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  

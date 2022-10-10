@@ -37,12 +37,33 @@ function Description() {
         delectus quae! Nostrum odit nesciunt numquam, fuga facere praesentium
         odio facilis iste, unde sit rem minus non!
       </div>
-      <div className="rating">
-        <h3>Ratings</h3>service ratings
-      </div>
-      <div className="review">
+
+      {/* <div className="rating">
+        <h3>Ratings</h3>
+        <div className={styles.ratingTable}>
+          <div className={styles.ratingRow}>
+            <progress
+              value="32"
+              max="100"
+              className={styles.ratingCell}
+            ></progress>
+            <p className={styles.ratingCell}>1</p>
+          </div>
+          <div className={styles.ratingRow}>
+            <progress
+              value="32"
+              max="100"
+              className={styles.ratingCell}
+            ></progress>
+            <p className={styles.ratingCell}>1</p>
+          </div>
+        </div>
+
+      </div> */}
+
+      {/* <div className="review">
         <h3>review</h3>service review
-      </div>
+      </div> */}
     </div>
   );
 }

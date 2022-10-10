@@ -1,24 +1,17 @@
 .serviceDiv{
-    /* text-decoration: none; */
     display: grid;
     row-gap: 25px;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
     justify-items: center;
     grid-template-columns: auto auto;
-    /* text-align: center; */
 }
 .service{
-    /* text-align: center; */
     display: flex;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    /* transition: 0.3s; */
     border-radius: 5px;
     margin-right: 5%;
     width:500px;
-    /* height:25vh; */
     padding: 10px;
+    background-color: #52db95;
 }
 .imageSection{
     display: flex;
@@ -56,4 +49,6 @@
 }
 a{
     text-decoration: none;
+    color: white;
+    font-weight: 600;
 }
