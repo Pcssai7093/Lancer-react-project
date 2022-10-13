@@ -3,16 +3,16 @@
     width: 100%;
     position: fixed;
     text-align: center;
-    background-color: #52db95;
+    background-color: #da79ed;
     opacity: 1;
     z-index: 1;
-    padding: 8px 0;
+    padding: 0px 0;
 }
 .menu{
     margin:10px 0;
-    /* position: fixed; */
 }
 .menu a{
+    color: black;
     color: white;
     font-weight: 600;
     text-decoration: None;

@@ -1,0 +1,27 @@
+{
+    "users":[{
+        "id":1,
+        "firstName":"raja",
+        "lastName":"sekhar",
+        "userName":"raja7093",
+        "mobile":"1231231231",
+        "email":"123@gmail.com",
+        "password":"123456"
+    }],
+    "services":[{
+        "id":1,
+        "title":"insta promotion",
+        "description":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, architecto.",
+        "userId":1,
+        "price:":3000
+    }],
+    "admin":[{
+        "id":1,
+        "firstName":"raja",
+        "lastName":"sekhar",
+        "userName":"raja7093",
+        "mobile":"1231231231",
+        "email":"123@gmail.com",
+        "password":"123456"
+    }]
+}

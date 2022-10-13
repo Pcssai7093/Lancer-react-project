@@ -8,9 +8,9 @@
     height:25px;
     font-size: larger;
     border: 1px solid;
-    color: white;
+    /* color: white; */
     font-weight: 600;
-    background-color: #52db95;
+    /* background-color: #52db95;    */
 }
 
 .filter{
@@ -20,27 +20,24 @@
     width:200px;
     height: 30px;
     font-size: larger;
-    color: white;
+    /* color: white; */
     font-weight: 600;
-    background-color: #52db95;
+    /* background-color: #52db95; */
 } 
 .clear{
     border: 1px solid;
     border-radius: 5px;
-    /* display: none; */
     margin-left: 10px;
-    /* border-color: white; */
     height: 30px;
     font-size: larger;
-    color: white;
+    /* color: white; */
     font-weight: 600;
-    background-color: #52db95;
-    /* border: n; */
+    /* background-color: #52db95; */
     cursor: pointer;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: white;
+    color: black;
     opacity: 1; /* Firefox */
   }
   
