@@ -1,7 +1,9 @@
  .descriptionDiv{
     text-align: center;
  }
-
+ .descriptionDiv.false{
+  color: white;
+ }
  .image{
    width:50%;
  }

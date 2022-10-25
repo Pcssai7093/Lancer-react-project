@@ -1,8 +1,17 @@
 import styles from "./Description.module.css";
 import img1 from "./t1.jpg";
+import modeContext from "../modeContext";
+import { useContext, useEffect, useState } from "react";
+
 function Description() {
+  const color = useContext(modeContext);
+
   return (
-    <div className={styles.descriptionDiv}>
+    <div
+      className={`${styles.descriptionDiv} ${
+        color ? styles.true : styles.false
+      }`}
+    >
       <div className="title">
         <h1>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos,

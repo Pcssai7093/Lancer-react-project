@@ -2,42 +2,54 @@
     text-align: center;
     margin: 20px 0px;
 }
+.searchBarDiv div{
+    text-align: center;
+}
 #searchBar{
-    border-radius: 5px;
-    width:200px;
-    height:25px;
+    /* border-radius: 5px; */
+    /* width:200px; */
+    /* height:25px; */
     font-size: larger;
     border: 1px solid;
     /* color: white; */
     font-weight: 600;
-    /* background-color: #52db95;    */
+    background-color: white;   
 }
 
 .filter{
     border: 1px solid;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     margin-left: 10px;
-    width:200px;
-    height: 30px;
+    /* width:200px; */
+    /* height: 30px; */
     font-size: larger;
     /* color: white; */
     font-weight: 600;
-    /* background-color: #52db95; */
+    background-color: white;
 } 
 .clear{
     border: 1px solid;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     margin-left: 10px;
-    height: 30px;
+    /* height: 30px; */
     font-size: larger;
     /* color: white; */
     font-weight: 600;
-    /* background-color: #52db95; */
+    background-color: white;
     cursor: pointer;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+#searchBar::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    /* color: white; */
     color: black;
     opacity: 1; /* Firefox */
   }
   
+.searchBarDiv.false #searchBar,.searchBarDiv.false .filter, .searchBarDiv.false .clear{
+color: white;
+background-color: black;   
+}
+
+.searchBarDiv.false #searchBar::placeholder{
+    color: white;
+}

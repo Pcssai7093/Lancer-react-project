@@ -2,3 +2,13 @@
   text-align: center;
 }
 
+.mode{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  /* border-radius: 100%; */
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
