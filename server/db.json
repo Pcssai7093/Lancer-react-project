@@ -1,57 +1,75 @@
 {
-    "users":[{
-        "id":1,
-        "firstName":"raja",
-        "lastName":"sekhar",
-        "userName":"raja7093",
-        "mobile":"1231231231",
-        "email":"123@gmail.com",
-        "password":"123456"
+  "users": [
+    {
+      "id": 1,
+      "firstName": "raju",
+      "lastName": "karemm",
+      "userName": "karem7093",
+      "mobile": "1231231232",
+      "email": "123@gmail.com",
+      "password": 1234455
     },
     {
-        "id":2,
-        "firstName":"raju",
-        "lastName":"karemm",
-        "userName":"karem7093",
-        "mobile":"1231231232",
-        "email":"123@gmail.com",
-        "password":"123456"
-    }],
-    "services":[{
-        "id":1,
-        "title":"insta promotion",
-        "description":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, architecto.",
-        "userId":1,
-        "price":3000
+      "id": 2,
+      "firstName": "raju",
+      "lastName": "karemm",
+      "userName": "karem7093",
+      "mobile": "1231231232",
+      "email": "123@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "title": "insta promotion",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, architecto.",
+      "userId": 1,
+      "date": "date in string",
+      "price": 3000,
+      "category":"web"
     },
     {
-        "id":2,
-        "title":"youtube promotion",
-        "description":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, architecto.",
-        "userId":1,
-        "price":2000
+      "id": 2,
+      "title": "youtube promotion",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, architecto.",
+      "userId": 1,
+      "date": "date in string",
+      "price": 2000
     },
     {
-        "id":3,
-        "title":"twitter promotion",
-        "description":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, architecto.",
-        "userId":1,
-        "price":3400
+      "id": 3,
+      "title": "twitter promotion",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, architecto.",
+      "userId": 1,
+      "date": "date in string",
+      "price": 3400
     },
     {
-        "id":4,
-        "title":"facebook promotion",
-        "description":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, architecto.",
-        "userId":1,
-        "price":4500
-    }],
-    "admin":[{
-        "id":1,
-        "firstName":"raja",
-        "lastName":"sekhar",
-        "userName":"raja7093",
-        "mobile":"1231231231",
-        "email":"123@gmail.com",
-        "password":"123456"
-    }]
+      "id": 4,
+      "title": "facebook promotion",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, architecto.",
+      "userId": 1,
+      "date": "date in string",
+      "price": 4500
+    }
+  ],
+  "wishlist": [
+    {
+      "userId": 1,
+      "serviceId": 3,
+      "id": 4
+    }
+  ],
+  "admin": [
+    {
+      "id": 1,
+      "firstName": "raja",
+      "lastName": "sekhar",
+      "userName": "raja7093",
+      "mobile": "1231231231",
+      "email": "123@gmail.com",
+      "password": "123456"
+    }
+  ]
 }

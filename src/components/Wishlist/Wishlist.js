@@ -1,27 +1,48 @@
-import styles from "./Services.module.css";
-import pic1 from "./pic1.jpg";
-import { Link, useHistory } from "react-router-dom";
-import { useContext, useState, useEffect } from "react";
-import modeContext from "../modeContext";
+import styles from "../Services/Services.module.css";
+import { useState, useEffect, useContext } from "react";
 import axios from "axios";
-import { setRef } from "@mui/material";
+import { Link, useHistory } from "react-router-dom";
+import pic1 from "../Services/pic1.jpg";
+import modeContext from "../modeContext";
 
-function Services({ data }) {
-  const color = useContext(modeContext);
+function Wishlist() {
+  const [data, setData] = useState([]);
   const history = useHistory();
-  async function handleAddToWishlist(id) {
-    const userId = 1;
-    await axios
-      .post("http://localhost:4000/wishlist", { userId: userId, serviceId: id })
+  const [render, setRender] = useState(true);
+  const color = useContext(modeContext);
+
+  function handleDeleteFromWishlist(id) {
+    axios
+      .delete("http://localhost:4000/wishlist/" + id)
       .then((res) => {
         console.log(res.data);
+        // history.push("/wishlist");
+        setRender(!render);
+        console.log(render);
+      })
+      .catch((err) => {
+        console.log(err);
       });
-    history.push("/wishlist");
   }
+  useEffect(() => {
+    const id = 1;
+    axios
+      .get(
+        "http://localhost:4000/wishlist?_expand=service&_expand=user&userId=1"
+      )
+      .then((result) => {
+        setData(result.data);
+        // setFilterData(result.data);
+        console.log(result.data);
+      })
+      .catch((err) => {
+        console.log("error");
+      });
+  }, [render]);
 
   return (
     <div
-      className={`${styles.serviceDiv} ${color ? styles.true : styles.false} `}
+      className={`${styles.serviceDiv} ${color ? styles.true : styles.false}`}
     >
       {data &&
         data.map((data) => (
@@ -32,7 +53,7 @@ function Services({ data }) {
               </div>
               <div className={styles.description}>
                 <div className={styles.header}>
-                  <div className={styles.title}>{data.title}</div>
+                  <div className={styles.title}>{data.service.title}</div>
                 </div>
                 <div className={styles.separator}></div>
 
@@ -47,21 +68,22 @@ function Services({ data }) {
                     <div className={styles.userName}>{data.user.userName}</div>
                   </div>
                 </div>
-
                 <div className={styles.separator}></div>
-                <div className={styles.price}>Starting from {data.price}\-</div>
+                <div className={styles.price}>
+                  Starting from {data.service.price}\-
+                </div>
                 {/* <div className={styles.separator}></div> */}
                 <div className={styles.footer}>
                   <div>
-                    <Link to={`/service/${data.id}`}> 🔎</Link>
+                    <Link to={`/service/${data.service.id}`}> 🔎</Link>
                   </div>
                   <div>
                     <Link
                       onClick={() => {
-                        handleAddToWishlist(data.id);
+                        handleDeleteFromWishlist(data.id);
                       }}
                     >
-                      💜
+                      ❌
                     </Link>
                   </div>
                 </div>
@@ -73,4 +95,4 @@ function Services({ data }) {
   );
 }
 
-export default Services;
+export default Wishlist;
