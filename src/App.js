@@ -13,11 +13,22 @@ import { fontSize } from "@mui/system";
 import axios from "axios";
 import { type } from "@testing-library/user-event/dist/type";
 import Wishlist from "./components/Wishlist/Wishlist";
+import LoginPage from "./components/Signin/LoginPage";
+import SignUp from "./components/Signup/SignUp";
+import Navbar1 from "./components/Landinpage/Navbar";
+import Hero from "./components/Landinpage/Hero";
+import Analytics from "./components/Landinpage/Analytics";
+import Newsletter from "./components/Landinpage/Newsletter";
+import Cards from "./components/Landinpage/Cards";
+import Footer from "./components/Landinpage/Footer";
 
 function App() {
-  const [color, setColor] = useState(true);
+  const [color, setColor] = useState(false);
   const [elem, setElem] = useState(document.body);
 
+  useEffect(() => {
+    elem.style.backgroundColor = "black";
+  }, []);
   function handleMode() {
     setColor(!color);
     // console.log(color);
@@ -32,20 +43,41 @@ function App() {
       <div className="App">
         <Switch>
           <modeContext.Provider value={color}>
-            <Route exact path="/"></Route>
+            <Route exact path="/">
+              <Navbar1 />
+              <Hero />
+              <Analytics />
+              <Newsletter />
+              <Cards />
+              <Footer />
+            </Route>
+            <Route exact path="/profile/:uid">
+              <Navbar />
+            </Route>
+            <Route exact path="/signin">
+              <LoginPage />
+            </Route>
+            <Route exact path="/signup">
+              <SignUp />
+            </Route>
             <Route exact path="/admin">
               {/* <AdminHome /> */}
             </Route>
-            <Route exact path="/post">
+            <Route exact path="/post/:uid">
+              <Navbar />
               {/* <Postform /> */}
             </Route>
-            <Route exact path="/wishlist">
+            <Route exact path="/navbar/:uid">
+              {/* <Postform /> */}
+              <Navbar />
+            </Route>
+            <Route exact path="/wishlist/:uid">
               <Navbar />
               <Space />
 
               <Wishlist />
             </Route>
-            <Route exact path="/home">
+            <Route exact path="/home/:uid">
               <Navbar />
               <Space />
               <Search />
@@ -53,7 +85,7 @@ function App() {
               <Space />
               <Space />
             </Route>
-            <Route exact path="/service/:id">
+            <Route exact path="/service/:uid/:pid">
               <Navbar />
               <Space />
               <Description />

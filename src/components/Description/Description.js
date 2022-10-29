@@ -8,7 +8,7 @@ import axios from "axios";
 function Description() {
   const color = useContext(modeContext);
   const params = useParams();
-  const id = params.id;
+  const id = params.pid;
   const [serviceData, setServiceData] = useState();
   useEffect(() => {
     axios
@@ -23,14 +23,14 @@ function Description() {
   }, []);
 
   return (
-    <div>
+    <div className="tw-">
       {serviceData && (
         <div
           className={`${styles.descriptionDiv} ${
             color ? styles.true : styles.false
           }`}
         >
-          <div className="title">
+          <div className="tw-">
             <h1>{serviceData.title}</h1>
           </div>
 
@@ -49,11 +49,11 @@ function Description() {
               </button>
             </div>
           </div>
-          <div className="description">
+          <div className={styles.description}>
             <h3>Description</h3>
             {serviceData.description}
           </div>
-          <div className="aboutOwner">
+          <div className={styles.aboutOwner}>
             <h3>About Lancer</h3>
             {serviceData.user.about}
           </div>

@@ -108,7 +108,8 @@ function Search() {
           />
         </form>
       </div>
-      {filterData && <Services data={filterData} />}
+      {<Services data={filterData} />}
+      {/* filterData && */}
     </div>
   );
 }

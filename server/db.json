@@ -4,7 +4,7 @@
       "id": 1,
       "firstName": "raju",
       "lastName": "karemm",
-      "userName": "karem7093",
+      "userName": "raju4343",
       "mobile": "1231231232",
       "email": "123@gmail.com",
       "password": 1234455
@@ -27,7 +27,7 @@
       "userId": 1,
       "date": "date in string",
       "price": 3000,
-      "category":"web"
+      "category": "web"
     },
     {
       "id": 2,
@@ -56,7 +56,22 @@
   ],
   "wishlist": [
     {
-      "userId": 1,
+      "userId": "2",
+      "serviceId": 2,
+      "id": 1
+    },
+    {
+      "userId": "1",
+      "serviceId": 1,
+      "id": 2
+    },
+    {
+      "userId": "1",
+      "serviceId": 2,
+      "id": 3
+    },
+    {
+      "userId": "1",
       "serviceId": 3,
       "id": 4
     }

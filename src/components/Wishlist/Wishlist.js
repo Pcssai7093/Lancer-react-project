@@ -15,10 +15,7 @@ function Wishlist() {
     axios
       .delete("http://localhost:4000/wishlist/" + id)
       .then((res) => {
-        console.log(res.data);
-        // history.push("/wishlist");
         setRender(!render);
-        console.log(render);
       })
       .catch((err) => {
         console.log(err);
@@ -32,8 +29,6 @@ function Wishlist() {
       )
       .then((result) => {
         setData(result.data);
-        // setFilterData(result.data);
-        console.log(result.data);
       })
       .catch((err) => {
         console.log("error");
