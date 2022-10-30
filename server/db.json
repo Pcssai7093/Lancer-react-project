@@ -52,6 +52,14 @@
       "userId": 1,
       "date": "date in string",
       "price": 4500
+    },
+    {
+      "title": "app development",
+      "description": "app development app development app development app development app development",
+      "price": "1222",
+      "category": "programming",
+      "userId": "1",
+      "id": 5
     }
   ],
   "wishlist": [
@@ -59,21 +67,6 @@
       "userId": "2",
       "serviceId": 2,
       "id": 1
-    },
-    {
-      "userId": "1",
-      "serviceId": 1,
-      "id": 2
-    },
-    {
-      "userId": "1",
-      "serviceId": 2,
-      "id": 3
-    },
-    {
-      "userId": "1",
-      "serviceId": 3,
-      "id": 4
     }
   ],
   "admin": [

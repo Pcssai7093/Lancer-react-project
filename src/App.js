@@ -8,8 +8,8 @@ import Space from "./components/Space/Space";
 import { useEffect, useState } from "react";
 import modeContext from "./components/modeContext";
 import { fontSize } from "@mui/system";
-// import { AdminHome } from "./components/Admin/admin";
-// import Postform from "./components/PostPage/Postform/Postform";
+import { AdminHome } from "./components/Admin/admin";
+import Postform from "./components/PostPage/Postform/Postform";
 import axios from "axios";
 import { type } from "@testing-library/user-event/dist/type";
 import Wishlist from "./components/Wishlist/Wishlist";
@@ -21,6 +21,7 @@ import Analytics from "./components/Landinpage/Analytics";
 import Newsletter from "./components/Landinpage/Newsletter";
 import Cards from "./components/Landinpage/Cards";
 import Footer from "./components/Landinpage/Footer";
+import { Admin } from "./components/Admin";
 
 function App() {
   const [color, setColor] = useState(false);
@@ -61,11 +62,13 @@ function App() {
               <SignUp />
             </Route>
             <Route exact path="/admin">
-              {/* <AdminHome /> */}
+              <Admin />
             </Route>
             <Route exact path="/post/:uid">
               <Navbar />
-              {/* <Postform /> */}
+              <Space />
+              <Space />
+              <Postform />
             </Route>
             <Route exact path="/navbar/:uid">
               {/* <Postform /> */}
@@ -74,7 +77,6 @@ function App() {
             <Route exact path="/wishlist/:uid">
               <Navbar />
               <Space />
-
               <Wishlist />
             </Route>
             <Route exact path="/home/:uid">

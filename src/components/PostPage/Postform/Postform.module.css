@@ -1,27 +1,29 @@
-* {
+/* * {
     box-sizing: border-box;
-  }
+  } */
   
-body {
-    /* background-color: #00539CFF; */
+/* body {
     background-color: #F7ECDE;
-}
-  input[type=text], select, textarea {
+} */
+
+  .ipt{
     width: 150%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 12px;
     resize: vertical;
   }
+
   
-  label {
+  
+  .lb {
     padding: 12px 12px 12px 0;
     display: inline-block;
     color: black;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
   }
   
-  input[type=submit] {
+  .inp {
     margin-top: 35px;
     background-color: #04AA6D;
     color: white;
@@ -32,25 +34,25 @@ body {
     float: right;
   }
   
-  input[type=submit]:hover {
+  .inp:hover {
     background-color:tomato;
   }
 
-  input[type=submit]:active {
+  .inp:active {
     background-color:midnightblue;
   }
 
-  #sub {
+  .sub {
     margin-left: 50px;
   }
   
   .container {
     border-radius: 5px;
-    margin-top: 100px;
     margin-bottom: 100px;
     /* background-color: #EEA47FFF; */
     background-color: #E3BEC6;
     padding: 20px;
+    overflow-x: hidden;
   }
   
   .col-25 {
@@ -75,6 +77,7 @@ body {
 
   .err {
     position: relative;
+    margin-top: 1%;
     left: 26%;
   }
   
@@ -91,7 +94,7 @@ body {
   
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
+    .col-25, .col-75, .inp {
       width: 100%;
       margin-top: 0;
     }

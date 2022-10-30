@@ -1,16 +1,16 @@
 import React from 'react'
-import './footer.css'
+import styles from './footer.module.css'
 const Footer = () => {
   return (
-    <>
-        <section className='footer'>
-        <div className='social'>
+    <div className={styles.btl}>
+        <section className={styles.footer}>
+        <div className={styles.social}>
             <a href="#"><i className='fa fa-instagram'></i></a>
             <a href="#"><i className='fa fa-twitter'></i></a>
             <a href="#"><i className='fa fa-facebook'></i></a>
         </div>
 
-        <ul className='list'>
+        <ul className={styles.list}>
             <li>
               <a href="#">Home</a>
             </li>
@@ -27,9 +27,9 @@ const Footer = () => {
               <a href="#">Privacy Policy</a>
             </li>
           </ul>
-          <p className='copyright'>Lancer @ 2022</p>
+          <p className={styles.copyright}>Lancer @ 2022</p>
         </section>
-    </>
+    </div>
   )
 }
 
